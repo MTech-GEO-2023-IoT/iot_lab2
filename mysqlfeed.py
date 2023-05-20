@@ -3,7 +3,7 @@
 #Import pymysql module library
 import pymysql
 #Create a connection to MySQL Database 
-conn =pymysql.connect(database="databasename",user="rohit",password="pass",host="localhost")
+conn =pymysql.connect(database="rohit",user="rohit",password="pass",host="localhost")
 #Create a MySQL Cursor to that executes the SQLs
 cur=conn.cursor()
 #Create a dictonary containing the fields, name, age and place
