@@ -37,7 +37,7 @@ def _on_connect(mqttclient, userdata, flags, rc):
 # print(rc)
  mqttclient.subscribe("IOT/#", qos=0)
  
-mqttclient.message_callback_add("IOT/test", test)
+mqttclient.message_callback_add("iot_sensor", test)
 mqttclient.connect(broker, port, keepalive=1, bind_address="")
  
 mqttclient.on_connect = _on_connect
