@@ -15,7 +15,7 @@ def storeData(mesg,t):
  #Create a dictonary containing the fields, name, age and place
  data={'topic':t,'data':mesg}
  #Execute the SQL to write data to the database
- cur.execute("INSERT INTO Sensordata(Topic , Sensorvalue)VALUES(%(topic)s,%(data)s);",data)
+ cur.execute("INSERT INTO rohit(topic , sensorvalue)VALUES(%(topic)s,%(data)s);",data)
  print("Data added")
  #Close the cursor
  cur.close()
