@@ -9,7 +9,7 @@ client_uniq = "pubclient_123"
 mqttclient = paho.Client(client_uniq, True) 
 def storeData(mesg,t):
  #Create a connection to MySQL Database 
- conn =pymysql.connect(database="Iotdatap",user="user2",password="Pass1234",host="localhost")
+ conn =pymysql.connect(database="rohit",user="rohit",password="pass",host="localhost")
  #Create a MySQL Cursor to that executes the SQLs
  cur=conn.cursor()
  #Create a dictonary containing the fields, name, age and place
